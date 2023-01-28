@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Digital Numbers", sans-serif;  
+  background-image: url("images/background2.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;                                
+}
+
+.timer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top:10px;
+  width: 140px;
+  background-color: black;
+  height: 40px;
+  color: firebrick;
+  font-size: 30px;
+  font-family: "Digital Numbers", sans-serif;
+  border-radius: 6px;
+}
+.timer-button-container {
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  margin-top: 20px;
+}
+.timer-buttons {
+  background: none;
+  color:rgb(187, 186, 186);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  height: 20px;
+  margin-inline: 6px;
+}
+.timer-buttons:hover {
+  border-width: 2px;
+  font-weight:600;
+  margin-right: 4px;
+  cursor: pointer;  
+}
+
+.versus{
+  position: relative;
+  width: 120px;
+  left:10px;
+  top:10px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 100px;
+  margin-right:10px;
+  padding:0;
+  color: firebrick;
+}
+
+.reset {
+  position:relative;
+  top:12px;
+  left:10px;
+  height: 40px;
+  width: 120px;
+  background: none;
+  border-radius: 20px;
+  padding-inline: 25px;
+  border-color: rgb(187, 186, 186);
+  color: rgb(187, 186, 186);
+  border-style: solid;
+  border-width: 1px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  margin:10px;
+  display: flex;
+  justify-content:space-evenly;
+  background-color: rgb(39, 43, 102);
+  width: 500px;
+  height: 270px;
+  border-style: none;
+  border-radius: 15px;
+}
+
+header {
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score {
+  font-family: "Digital Numbers", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 20, 0);
+  height: 100px;
+  color:greenyellow;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttonSet1 {
+  margin-inline: 5px;
+  background: none;
+  border-color: rgb(187, 186, 186);
+  color: rgb(187, 186, 186);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+.buttonSet2 {
+  margin-inline: 5px;
+  background: none;
+  border-color: rgb(187, 186, 186);
+  color: rgb(187, 186, 186);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+.buttonSet2:hover {
+  opacity:1;
+}
+.buttonSet1:hover,
+.reset:hover {
+border-width: 2px;
+font-weight:600;
+cursor: pointer;
+}
+.buttonSet1:active,
+.reset:active,
+.timer-buttons:active,
+.buttonSet2:active  {
+background-color: rgb(61, 65, 124);
+}
+

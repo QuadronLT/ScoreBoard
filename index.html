@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <link href="https://fonts.cdnfonts.com/css/digital-numbers" rel="stylesheet">
+      <link rel="stylesheet" href="index.css">
+      <title>ScoreBoard</title>
+    </head>
+    <body>
+        <div class="container">
+                        <!-- Score board one -->
+            <div>
+                <header>HOME</header>
+                <div class="score score1">00</div>
+                <div class="buttons">
+                  <button onclick="score1a()" class="buttonSet1 plus1">+1</button>
+                  <button onclick="score1b()" class="buttonSet1 plus2">+2</button>
+                  <button onclick="score1c()" class="buttonSet1 plus3">+3</button>
+                </div>
+                <div class="buttons">
+                  <button onclick="score1d()" class="buttonSet2 minus1">-1</button>
+                  <button onclick="score1e()" class="buttonSet2 minus2">-2</button>
+                  <button onclick="score1f()" class="buttonSet2 minus3">-3</button>
+                </div>
+            </div>
+                        <!-- VERSUS -->
+            <div class="versus-container">
+              <div class="timer">10:00</div>
+              <div class="versus"><em>VS</em></div>
+              <button onclick="reset1()" class="reset">Resset</button>
+              <div class= "timer-button-container">
+                <button class="timer-buttons" id = "pauseTimer">Pause</button>
+                <button class="timer-buttons" id = "startTimer">Start</button>
+                <button class="timer-buttons" id = "resetTimer">Reset</button>
+              </div>
+            </div>
+                        <!-- Score board Two -->
+            <div>
+                <header>GUEST</header>
+                <div class="score score2">00</div>
+                <div class="buttons">
+                  <button onclick="score2a()" class="buttonSet1 plus1">+1</button>
+                  <button onclick="score2b()" class="buttonSet1 plus2">+2</button>
+                  <button onclick="score2c()" class="buttonSet1 plus3">+3</button>
+                </div>
+                <div class="buttons">
+                  <button onclick="score2d()" class="buttonSet2 minus1">-1</button>
+                  <button onclick="score2e()" class="buttonSet2 minus2">-2</button>
+                  <button onclick="score2f()" class="buttonSet2 minus3">-3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
